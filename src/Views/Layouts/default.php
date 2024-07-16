@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="/project.loc/style.css">
+    <link rel="stylesheet" href="/online_shop/style.css">
     <title>Фильтры</title>
 </head>
 <body>
@@ -14,7 +14,7 @@
         <div class="container">
             
                 <a class="navbar-brand me-5" href="#">
-                  <img src="/project.loc/img/logo.svg" alt="" width="30" height="30" class="d-inline-block align-text-top">
+                  <img src="/online_shop/img/logo.svg" alt="" width="30" height="30" class="d-inline-block align-text-top">
                   Фильтры
                 </a>
           <button class="navbar-toggler" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
@@ -23,26 +23,26 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/project.loc/">Главная</a>
+                <a class="nav-link active" aria-current="page" href="/online_shop/">Главная</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="/project.loc/categories/all">Каталог</a>
+                <a class="nav-link active" href="/online_shop/categories/all">Каталог</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="/project.loc/articles">Статьи</a>
+                <a class="nav-link active" href="/online_shop/articles">Статьи</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active"  href="/project.loc/cart">Корзина</a>
+                <a class="nav-link active"  href="/online_shop/cart">Корзина</a>
               </li>
               
               <li class="nav-item">
-                <?= !empty($user) ? "<a class='nav-link active' href='/project.loc/users/logout'>Выйти</a>" : '' ?>
+                <?= !empty($user) ? "<a class='nav-link active' href='/online_shop/users/logout'>Выйти</a>" : '' ?>
               </li>
               <li class="nav-item">
-                <?= empty($user) ? "<a class='nav-link active' href='/project.loc/users/register'>Регистрация</a>" : "<a class='nav-link active' href='/project.loc/personal'>Личный кабинет</a>" ?>
+                <?= empty($user) ? "<a class='nav-link active' href='/online_shop/users/register'>Регистрация</a>" : "<a class='nav-link active' href='/online_shop/personal'>Личный кабинет</a>" ?>
               </li>
               <li class="nav-item">
-                <?= !empty($user) ? '<span class="nav-link active" >Привет, '  . $user->getNickname() . '</span>'  : "<a class='nav-link active' href='/project.loc/users/login'>Войти</a>"?>
+                <?= !empty($user) ? '<span class="nav-link active" >Привет, '  . $user->getNickname() . '</span>'  : "<a class='nav-link active' href='/online_shop/users/login'>Войти</a>"?>
               </li>
               
               
@@ -79,7 +79,7 @@
               
               
             </ul>
-            <form class="d-flex" role="search" action="/project.loc/search">
+            <form class="d-flex" role="search" action="/online_shop/search">
               <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск" name="q" id="q">
               <button class="btn btn-outline-light" type="submit">Поиск</button>
             </form>
@@ -98,13 +98,13 @@
     <!-- <div class="row p-5"> -->
       <div class="col-md-3 col-sm-6 footer-column mb-3">
         <h4 class="footer-title">Быстрый старт</h4>
-        <a class="footer-link" href="/project.loc/">Главная</a>
-        <a class="footer-link" href="/project.loc/users/login">Авторизация</a>
+        <a class="footer-link" href="/online_shop/">Главная</a>
+        <a class="footer-link" href="/online_shop/users/login">Авторизация</a>
       </div>
       <div class="col-md-3 col-sm-6 footer-column mb-3">
         <h4 class="footer-title">Наша политика</h4>
-        <a class="footer-link" href="/project.loc">Политика конфиденциальности</a>
-        <a class="footer-link" href="/project.loc">Пользовательское соглашение</a>
+        <a class="footer-link" href="/online_shop">Политика конфиденциальности</a>
+        <a class="footer-link" href="/online_shop">Пользовательское соглашение</a>
       </div>
       <div class="col-md-3 col-sm-6 footer-column mb-3">
         <h4 class="footer-title">Свяжитесь с нами</h4>
@@ -113,12 +113,12 @@
       </div>
       <div class="col-md-3 col-sm-6 footer-soc mb-3">
         <h4 class="footer-title">Мы в соц. сетях</h4>
-        <img class="soc-img mb-1" src="/project.loc/img/11.svg" alt="">
-        <img class="soc-img mb-1" src="/project.loc/img/12.svg" alt="">
-        <img class="soc-img mb-1" src="/project.loc/img/13.svg" alt="">
-        <img class="soc-img mb-1" src="/project.loc/img/14.svg" alt="">
-        <img class="soc-img mb-1" src="/project.loc/img/15.svg" alt="">
-        <img class="soc-img mb-1" src="/project.loc/img/16.svg" alt="">
+        <img class="soc-img mb-1" src="/online_shop/img/11.svg" alt="">
+        <img class="soc-img mb-1" src="/online_shop/img/12.svg" alt="">
+        <img class="soc-img mb-1" src="/online_shop/img/13.svg" alt="">
+        <img class="soc-img mb-1" src="/online_shop/img/14.svg" alt="">
+        <img class="soc-img mb-1" src="/online_shop/img/15.svg" alt="">
+        <img class="soc-img mb-1" src="/online_shop/img/16.svg" alt="">
       </div>
     <!-- </div> -->
     </footer>

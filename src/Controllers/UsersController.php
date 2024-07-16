@@ -58,7 +58,7 @@ class UsersController extends Controller
             try {
                 $user = User::login($_POST);
                 UsersAuthService::createToken($user);
-                header('Location: /project.loc/');
+                header('Location: /online_shop/');
                 exit;
             } catch (InvalidArgumentException $e) {
                 $this->view->renderHtml('users/login.php', ['error' => $e->getMessage()]);
@@ -79,7 +79,7 @@ class UsersController extends Controller
             setcookie('token', '', -1, '/', '', false, true); 
             // var_dump($user);
             
-            header('Location: /project.loc/');
+            header('Location: /online_shop/');
             exit();
             // $user->save();
 
@@ -88,7 +88,7 @@ class UsersController extends Controller
         //     try {
         //         $user = User::login($_POST);
         //         UsersAuthService::createToken($user);
-        //         header('Location: /project.loc/articles/all');
+        //         header('Location: /online_shop/articles/all');
         //         exit;
         //     } catch (InvalidArgumentException $e) {
         //         $this->view->renderHtml('users/login.php', ['error' => $e->getMessage()]);

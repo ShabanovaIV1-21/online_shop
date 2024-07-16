@@ -64,7 +64,7 @@ class ArticlesController extends Controller
                 $this->view->renderHtml('articles/edit.php', ['error' => $e->getMessage()]);
                 return;
             }
-            header('Location: /project.loc/articles/'  . $article->getId(), true, 302);
+            header('Location: /online_shop/articles/'  . $article->getId(), true, 302);
             exit();
         }
 
@@ -87,7 +87,7 @@ class ArticlesController extends Controller
                 $this->view->renderHtml('articles/add.php', ['error' => $e->getMessage()]);
                 return;
             }
-            header('Location: /project.loc/articles/'  . $article->getId(), true, 302);
+            header('Location: /online_shop/articles/'  . $article->getId(), true, 302);
             exit();
         }
         

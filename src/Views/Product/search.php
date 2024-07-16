@@ -6,7 +6,7 @@
             <?php foreach ($searchProducts as $k => $val) : ?>
                 <div class="col-12 col-sm-6 col-lg-3 mt-4 mb-2"><!--  сколько кололонок занимает элемент внутри и при какой ширине экрана-->
                     <div class="card" >
-                        <img src="/project.loc/img/products/<?=$val->img?>" class="card-img-top py-2" alt="Фото продукта">
+                        <img src="/online_shop/img/products/<?=$val->img?>" class="card-img-top py-2" alt="Фото продукта">
                         <div class="card-body">
                             <div class="card__body-up">
                                 <h5 class="card-title"><?=$val->title?></h5>
@@ -15,8 +15,8 @@
                                 </div>
                                 <p class="card-text"><?=$val->content?></p>
                             </div>
-                            <a class="btn btn-success align-self-end mt-2 mb-2" href="/project.loc/product/<?=$val->id?>">Посмотреть подробно</a>
-                            <a href='/project.loc/cart/add/<?=$val->id?>'><img src="/project.loc/img/cart.png" class="cart-img"></a>
+                            <a class="btn btn-success align-self-end mt-2 mb-2" href="/online_shop/product/<?=$val->id?>">Посмотреть подробно</a>
+                            <a href='/online_shop/cart/add/<?=$val->id?>'><img src="/online_shop/img/cart.png" class="cart-img"></a>
                         </div>
                     </div>
                 </div>

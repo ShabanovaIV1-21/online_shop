@@ -36,6 +36,6 @@
 
     <? endforeach; ?>
     </table>
-    <a href="/project.loc/admin/order/<?=$order->getId()?>/edit" class="btn btn-primary">Редактирование</a></td>
-    <a href="/project.loc/admin/order/<?=$order->getId()?>/delete" class="btn btn-primary">Удаление</a>
+    <a href="/online_shop/admin/order/<?=$order->getId()?>/edit" class="btn btn-primary">Редактирование</a></td>
+    <a href="/online_shop/admin/order/<?=$order->getId()?>/delete" class="btn btn-primary">Удаление</a>
 </div>

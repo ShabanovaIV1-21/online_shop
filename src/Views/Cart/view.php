@@ -11,7 +11,7 @@
         <?php  foreach($cart as $k => $val) :?>
             <tr>
             <!-- <div class="d-flex flex-row"> -->
-                <td><img height="150" src="/project.loc/img/products/<?=$val['img']?>" alt="Фото продукта"></td>
+                <td><img height="150" src="/online_shop/img/products/<?=$val['img']?>" alt="Фото продукта"></td>
                 <td><h4><?=$val['title']?></h4></td>
                 <td>
                     <div>

@@ -5,7 +5,7 @@
             <?php if ($val->getIsOffer() != 0): ?>
                 <div class="col-12 col-sm-6 col-lg-3 mt-4 mb-2"><!--  сколько кололонок занимает элемент внутри и при какой ширине экрана-->
                     <div class="card" >
-                        <img src="/project.loc/img/products/<?=$val->getImg()?>" class="card-img-top py-2" alt="Фото продукта">
+                        <img src="/online_shop/img/products/<?=$val->getImg()?>" class="card-img-top py-2" alt="Фото продукта">
                         <div class="card-body">
                             <div class="card__body-up">
                                 <h5 class="card-title"><?=$val->getTitle()?></h5>
@@ -14,8 +14,8 @@
                                 </div>
                                 <p class="card-text"><?=$val->getContent()?></p>
                             </div>
-                            <a class="btn btn-success align-self-end mt-2 mb-2" href="/project.loc/product/<?=$val->getId()?>">Посмотреть подробно</a>
-                            <a href='/project.loc/cart/add/<?=$val->getId()?>'><img src="/project.loc/img/cart.png" class="cart-img"></a>
+                            <a class="btn btn-success align-self-end mt-2 mb-2" href="/online_shop/product/<?=$val->getId()?>">Посмотреть подробно</a>
+                            <a href='/online_shop/cart/add/<?=$val->getId()?>'><img src="/online_shop/img/cart.png" class="cart-img"></a>
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
 <h1 class="mt-4 mb-2">Статьи по теме</h1>
 
 <?php foreach ($articles as $article) : ?>
-    <h3><a class="list" href="/project.loc/articles/<?=$article->getId()?>"><?=$article->getName()?>, <?=$article->getCreatedAt()?></a></h3>
+    <h3><a class="list" href="/online_shop/articles/<?=$article->getId()?>"><?=$article->getName()?>, <?=$article->getCreatedAt()?></a></h3>
 
 <?php endforeach; ?>
 </div>

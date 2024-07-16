@@ -5,7 +5,7 @@
         <div style="color:red"><?=$error?></div>
     <?php endif;?>
 
-    <form action='/project.loc/admin/product/add' method="post" enctype="multipart/form-data">
+    <form action='/online_shop/admin/product/add' method="post" enctype="multipart/form-data">
         <div  class='d-flex flex-column col-3'>
             <div class="mb-2">
                 <label class="form-label">Название товара <br>

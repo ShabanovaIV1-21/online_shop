@@ -19,7 +19,7 @@ class CartController extends Controller
         }
         $cart = new Cart();
         $cart->addToCart($product);
-        header('Location:/project.loc/cart');
+        header('Location:/online_shop/cart');
     }
 
     public function delItem($id)
@@ -31,7 +31,7 @@ class CartController extends Controller
 
         $cart = new Cart();
         $cart->addToCart($product, -1);
-        header('Location:/project.loc/cart');
+        header('Location:/online_shop/cart');
     }
 
     public function delAllItem($id)
@@ -40,7 +40,7 @@ class CartController extends Controller
         $cart = new Cart();
         $cart->addToCart($product, -1 * $_SESSION['cart'][$id]['qty']);
         unset($_SESSION['cart'][$id]);
-        header('Location:/project.loc/cart');
+        header('Location:/online_shop/cart');
     }
 
     // public function addItem($id)
@@ -52,7 +52,7 @@ class CartController extends Controller
 
     //     $cart = new Cart();
     //     $cart->addToCart($product, 1);
-    //     header('Location:/project.loc/cart');
+    //     header('Location:/online_shop/cart');
     // }
 
     public function clear()
@@ -60,7 +60,7 @@ class CartController extends Controller
         unset($_SESSION['cart']);
         unset($_SESSION['cart.sum']);
         unset($_SESSION['cart.qty']);
-        header('Location:/project.loc/cart');
+        header('Location:/online_shop/cart');
 
     }
     public function view()

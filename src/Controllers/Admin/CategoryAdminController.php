@@ -57,7 +57,7 @@ class CategoryAdminController extends Controller
                 $this->view->renderHtml('admin/category/add.php', ['error' => $e->getMessage(), 'categories' => $categories]);
                 return;
             }
-            header('Location: /project.loc/admin/category/all');
+            header('Location: /online_shop/admin/category/all');
             exit();
         }
         $this->view->renderHtml('admin/category/add.php', ['categories' => $categories]);
@@ -88,7 +88,7 @@ class CategoryAdminController extends Controller
                 $this->view->renderHtml('admin/category/edit.php', ['error' => $e->getMessage(), 'category' => $category, 'categories' => $categories]);
                 return;
             }
-            header('Location: /project.loc/admin/category/'  . $category->getId(), true, 302);
+            header('Location: /online_shop/admin/category/'  . $category->getId(), true, 302);
             exit();
         }
         $this->view->renderHtml('admin/category/edit.php', ['category' => $category, 'categories' => $categories]);
@@ -140,7 +140,7 @@ class CategoryAdminController extends Controller
         }
         // echo "Статья '" . $article->getName() . "' удалена успешно";
         $category->delete();
-        header('Location: /project.loc/admin/category/all');
+        header('Location: /online_shop/admin/category/all');
 
     }
 
@@ -162,7 +162,7 @@ class CategoryAdminController extends Controller
     //         try {
     //             $user = User::login($_POST);
     //             UsersAuthService::createToken($user);
-    //             header('Location: /project.loc/articles/all');
+    //             header('Location: /online_shop/articles/all');
     //             exit;
     //         } catch (InvalidArgumentException $e) {
     //             $this->view->renderHtml('users/login.php', ['error' => $e->getMessage()]);
@@ -183,7 +183,7 @@ class CategoryAdminController extends Controller
     //         setcookie('token', '', -1, '/', '', false, true); 
     //         // var_dump($user);
             
-    //         header('Location: /project.loc/articles/all');
+    //         header('Location: /online_shop/articles/all');
     //         exit();
     //         // $user->save();
 
@@ -192,7 +192,7 @@ class CategoryAdminController extends Controller
     //     //     try {
     //     //         $user = User::login($_POST);
     //     //         UsersAuthService::createToken($user);
-    //     //         header('Location: /project.loc/articles/all');
+    //     //         header('Location: /online_shop/articles/all');
     //     //         exit;
     //     //     } catch (InvalidArgumentException $e) {
     //     //         $this->view->renderHtml('users/login.php', ['error' => $e->getMessage()]);

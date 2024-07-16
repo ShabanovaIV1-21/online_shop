@@ -5,7 +5,7 @@
             <tr>
                 <td><?=$user->getNickname()?></td>
                 <td><?=$user->getEmail()?></td>
-                <td><a href="/project.loc/users/<?=$user->getId()?>" class="btn btn-primary">Просмотр</a></td>
+                <td><a href="/online_shop/users/<?=$user->getId()?>" class="btn btn-primary">Просмотр</a></td>
             </tr>
         <?php endforeach; ?>
     </table>

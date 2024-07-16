@@ -20,7 +20,7 @@
                                 <div class="text-center mt-4">
                                     <p class="lead">Вы не авторизованы</p>
                                         <i class="fas fa-arrow-left me-1"></i>
-                                        Для доступа к этой странице нужно <a href='/project.loc/users/login'>войти на сайт</a>
+                                        Для доступа к этой странице нужно <a href='/online_shop/users/login'>войти на сайт</a>
                                 </div>
                             </div>
                         </div>
@@ -43,6 +43,6 @@
             </div> -->
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="/project.loc/admin_style/js/scripts.js"></script>
+        <script src="/online_shop/admin_style/js/scripts.js"></script>
     </body>
 </html>

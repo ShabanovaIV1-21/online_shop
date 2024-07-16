@@ -5,7 +5,7 @@
         <div style="color:red"><?=$error?></div>
     <?php endif;?>
 
-    <form action='/project.loc/admin/category/<?=$category->getId()?>/edit' method="post">
+    <form action='/online_shop/admin/category/<?=$category->getId()?>/edit' method="post">
         <div  class='d-flex flex-column col-3'>
             <div class="mb-2">
                 <label class="form-label">Название категории <br>

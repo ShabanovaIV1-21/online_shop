@@ -4,7 +4,7 @@
     if (!empty($error)):?>
     <div style="color:red"><?=$error?></div>
     <?php endif;?>
-    <form action="/project.loc/users/register" method="POST">
+    <form action="/online_shop/users/register" method="POST">
         <div  class="d-flex flex-column col-3">
             <div class="mb-2">
                 <label class="form-label">Имя <br>

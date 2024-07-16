@@ -8,8 +8,8 @@
         <meta name="author" content="" />
         <title>Dashboard - SB Admin</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
-        <link href="/project.loc/admin_style/css/styles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/project.loc/style.css">
+        <link href="/online_shop/admin_style/css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/online_shop/style.css">
 
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>
@@ -93,19 +93,19 @@
                                 </nav>
                             </div> -->
                             <!-- <div class="sb-sidenav-menu-heading">Addons</div> -->
-                            <a class="nav-link" href="/project.loc/">
+                            <a class="nav-link" href="/online_shop/">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Главная
                             </a>
-                            <a class="nav-link" href="/project.loc/admin/category/all">
+                            <a class="nav-link" href="/online_shop/admin/category/all">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Категории
                             </a>
-                            <a class="nav-link" href="/project.loc/admin/product/all">
+                            <a class="nav-link" href="/online_shop/admin/product/all">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Товары
                             </a>
-                            <a class="nav-link" href="/project.loc/admin/order/all">
+                            <a class="nav-link" href="/online_shop/admin/order/all">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Заказы
                             </a>
@@ -696,11 +696,11 @@
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="/project.loc/admin_style/js/scripts.js"></script>
+        <script src="/online_shop/admin_style/js/scripts.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-        <script src="/project.loc/admin_style/assets/demo/chart-area-demo.js"></script>
-        <script src="/project.loc/admin_style/assets/demo/chart-bar-demo.js"></script>
+        <script src="/online_shop/admin_style/assets/demo/chart-area-demo.js"></script>
+        <script src="/online_shop/admin_style/assets/demo/chart-bar-demo.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
-        <script src="/project.loc/admin_style/js/datatables-simple-demo.js"></script>
+        <script src="/online_shop/admin_style/js/datatables-simple-demo.js"></script>
     </body>
 </html>

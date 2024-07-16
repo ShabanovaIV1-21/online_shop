@@ -1,13 +1,13 @@
 <div class="container">
     <h1 class="mt-4 mb-2">Личный кабинет</h1>
-    <a href="/project.loc/personal/orders" class="btn btn-primary">Заказы</a>
+    <a href="/online_shop/personal/orders" class="btn btn-primary">Заказы</a>
 
     <?php if (!empty($error)): ?>
         <div style="color:red"><?= $error ?></div>
     <?php endif; ?>
 
     <h3 class="mt-4 mb-2">Настройки профиля</h3>
-    <form action="/project.loc/personal" method="POST">
+    <form action="/online_shop/personal" method="POST">
         <div class="d-flex flex-column col-3">
             <div class="mb-2">
                 <label class="form-label">Имя <br>

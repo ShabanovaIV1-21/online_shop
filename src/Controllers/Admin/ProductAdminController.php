@@ -58,7 +58,7 @@ class ProductAdminController extends Controller
                 $this->view->renderHtml('admin/product/add.php', ['error' => $e->getMessage(), 'categories' => $categories]);
                 return;
             }
-            header('Location: /project.loc/admin/product/all');
+            header('Location: /online_shop/admin/product/all');
             exit();
         }
         
@@ -91,7 +91,7 @@ class ProductAdminController extends Controller
                 $this->view->renderHtml('admin/product/edit.php', ['error' => $e->getMessage(), 'product' => $product, 'categories' => $categories]);
                 return;
             }
-            header('Location: /project.loc/admin/product/'  . $product->getId(), true, 302);
+            header('Location: /online_shop/admin/product/'  . $product->getId(), true, 302);
             exit();
         }
 
@@ -143,7 +143,7 @@ class ProductAdminController extends Controller
         }
         // echo "Статья '" . $article->getName() . "' удалена успешно";
         $product->delete();
-        header('Location: /project.loc/admin/product/all');
+        header('Location: /online_shop/admin/product/all');
 
     }
 
@@ -165,7 +165,7 @@ class ProductAdminController extends Controller
     //         try {
     //             $user = User::login($_POST);
     //             UsersAuthService::createToken($user);
-    //             header('Location: /project.loc/articles/all');
+    //             header('Location: /online_shop/articles/all');
     //             exit;
     //         } catch (InvalidArgumentException $e) {
     //             $this->view->renderHtml('users/login.php', ['error' => $e->getMessage()]);
@@ -186,7 +186,7 @@ class ProductAdminController extends Controller
     //         setcookie('token', '', -1, '/', '', false, true); 
     //         // var_dump($user);
             
-    //         header('Location: /project.loc/articles/all');
+    //         header('Location: /online_shop/articles/all');
     //         exit();
     //         // $user->save();
 
@@ -195,7 +195,7 @@ class ProductAdminController extends Controller
     //     //     try {
     //     //         $user = User::login($_POST);
     //     //         UsersAuthService::createToken($user);
-    //     //         header('Location: /project.loc/articles/all');
+    //     //         header('Location: /online_shop/articles/all');
     //     //         exit;
     //     //     } catch (InvalidArgumentException $e) {
     //     //         $this->view->renderHtml('users/login.php', ['error' => $e->getMessage()]);

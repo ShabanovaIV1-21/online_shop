@@ -61,7 +61,7 @@ class OrderAdminController extends Controller
     //             $this->view->renderHtml('admin/product/add.php', ['error' => $e->getMessage(), 'categories' => $categories]);
     //             return;
     //         }
-    //         header('Location: /project.loc/admin/product/all');
+    //         header('Location: /online_shop/admin/product/all');
     //         exit();
     //     }
         
@@ -95,7 +95,7 @@ class OrderAdminController extends Controller
                 $this->view->renderHtml('admin/order/edit.php', ['error' => $e->getMessage(), 'order' => $order]);
                 return;
             }
-            header('Location: /project.loc/admin/order/'  . $order->getId(), true, 302);
+            header('Location: /online_shop/admin/order/'  . $order->getId(), true, 302);
             exit();
         }
 
@@ -144,7 +144,7 @@ class OrderAdminController extends Controller
         }
         // echo "Статья '" . $article->getName() . "' удалена успешно";
         $order->delete();
-        header('Location: /project.loc/admin/order/all');
+        header('Location: /online_shop/admin/order/all');
 
     }
 
@@ -166,7 +166,7 @@ class OrderAdminController extends Controller
     //         try {
     //             $user = User::login($_POST);
     //             UsersAuthService::createToken($user);
-    //             header('Location: /project.loc/articles/all');
+    //             header('Location: /online_shop/articles/all');
     //             exit;
     //         } catch (InvalidArgumentException $e) {
     //             $this->view->renderHtml('users/login.php', ['error' => $e->getMessage()]);
@@ -187,7 +187,7 @@ class OrderAdminController extends Controller
     //         setcookie('token', '', -1, '/', '', false, true); 
     //         // var_dump($user);
             
-    //         header('Location: /project.loc/articles/all');
+    //         header('Location: /online_shop/articles/all');
     //         exit();
     //         // $user->save();
 
@@ -196,7 +196,7 @@ class OrderAdminController extends Controller
     //     //     try {
     //     //         $user = User::login($_POST);
     //     //         UsersAuthService::createToken($user);
-    //     //         header('Location: /project.loc/articles/all');
+    //     //         header('Location: /online_shop/articles/all');
     //     //         exit;
     //     //     } catch (InvalidArgumentException $e) {
     //     //         $this->view->renderHtml('users/login.php', ['error' => $e->getMessage()]);

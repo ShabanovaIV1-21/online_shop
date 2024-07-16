@@ -5,11 +5,11 @@
         <div style="color:red"><?=$error?></div>
     <?php endif;?>
 
-    <a href="/project.loc/cart"><- Вернуться назад</a>
+    <a href="/online_shop/cart"><- Вернуться назад</a>
     <p><b>Итоговая сумма заказа:</b> <?=$cart_sum?> <br>
     <b>Итоговое количество товаров:</b> <?=$cart_qty?></p>
 
-    <form action='/project.loc/cart/order' method="post">
+    <form action='/online_shop/cart/order' method="post">
         <div  class='d-flex flex-column col-3'>
             <div class="mb-2">
                 <label>ФИО <br>
